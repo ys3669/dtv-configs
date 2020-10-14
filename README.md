@@ -1,7 +1,7 @@
 # dtv-configs
 dtv関連(mirakurn/epgstation)のconfig置き場
 
-[docker-mirakurun-epgstation](https://github.com/l3tnun/docker-mirakurun-epgstation)をPX-W3U4で使いCIR115-NTTComとvaapiを追加したり[advancedbear/EPGS-to-Discord](https://github.com/advancedbear/EPGS-to-Discord)(手動追加)しりした。昔はWindowsだった。
+[docker-mirakurun-epgstation](https://github.com/l3tnun/docker-mirakurun-epgstation)をPX-W3U4で使いCIR115-NTTComとvaapiを追加したり[advancedbear/EPGS-to-Discord](https://github.com/advancedbear/EPGS-to-Discord)を手動追加したりした。昔はWindowsだった。
 - `channels.yml`は環境に合わせて要修正 or `curl -X PUT "http://localhost:40772/api/config/channels/scan"`
 - `enc_h264_qsv.js`は昔のなごり
 
