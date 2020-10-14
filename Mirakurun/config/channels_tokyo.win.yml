@@ -1,0 +1,319 @@
+#
+#もしサブ編成をChinachu外のBonDriver_Mirakurun等から録画する場合該当局のServiceidをすべて記載すること
+#false #TBS <-> ture #FBS / false #TCS <->ture #FCS で有料波一括切り替え  
+#http://www.soumu.go.jp/main_sosiki/joho_tsusin/eisei/eisei.pdf
+#
+- name: ＮＨＫ総合・東京
+  type: GR
+  channel: '14'
+
+- name: ＮＨＫＥテレ東京
+  type: GR
+  channel: '13'
+
+- name: ｔｖｋ
+  type: GR
+  channel: '5'
+
+- name: テレ玉
+  type: GR
+  channel: '19'
+
+- name: 日テレ
+  type: GR
+  channel: '12'
+
+- name: テレビ朝日
+  type: GR
+  channel: '11'
+
+- name: ＴＢＳ
+  type: GR
+  channel: '9'
+
+- name: テレビ東京
+  type: GR
+  channel: '10'
+
+- name: フジテレビ
+  type: GR
+  channel: '8'
+
+- name: ＴＯＫＹＯ　ＭＸ
+  type: GR
+  channel: '3'
+
+- name: J:COMテレビ
+  type: GR
+  channel: '10'
+
+- name: J:COMチャンネル
+  type: GR
+  channel: '24'
+
+#====================================
+#BS
+#radi-sh製BonDriver_BDAを使用する場合S.iniに記載されているCHナンバーを使用すること
+#BS-ch01
+- name: BS朝日１
+  type: BS
+  channel: '000'
+  satelite: '0' 
+
+- name: BS-TBS
+  type: BS
+  channel: '001'
+  satelite: '0' 
+
+- name: BS Japan
+  type: BS
+  channel: '002'
+  satelite: '0' 
+
+
+#BS-ch03
+- name: WOWOW プライム
+  type: BS
+  channel: '003'
+  satelite: '0' 
+  isDisabled: false #TBS
+
+- name: NHK BSプレミアム
+  type: BS
+  channel: '004'
+  satelite: '0' 
+
+- name: NHK BS1 (Sub)
+  type: BS
+  channel: '004'
+  serviceId: 102
+  satelite: '0' 
+  isDisabled: false
+  
+- name: ディズニーチャンネル
+  type: BS
+  channel: '005'
+  satelite: '0' 
+  isDisabled: false #TBS
+
+#BS-ch05
+- name: WOWOW Live
+  type: BS
+  channel: '006'
+  satelite: '0' 
+  isDisabled: false #TBS
+
+- name: WOWOW Cinema
+  type: BS
+  channel: '007'
+  satelite: '0' 
+  isDisabled: false #TBS
+
+#BS-ch09
+- name: BS11
+  type: BS
+  channel: '008'
+  satelite: '0' 
+
+- name: スター・チャンネル1
+  type: BS
+  channel: '009'
+  satelite: '0' 
+  isdisable: false #TBS
+
+- name: TwellV
+  type: BS
+  channel: '010'
+  satelite: '0' 
+
+#BS-ch11
+- name: 放送大学
+  type: BS
+  channel: '011'
+  satelite: '0' 
+
+- name: FOXスポーツ&エンターテインメント
+  type: BS
+  channel: '012'
+  satelite: '0' 
+  isdisable: false #TBS
+
+- name: BS スカパー!
+  type: BS
+  channel: '013'
+  satelite: '0' 
+  isdisable: false #TBS
+
+#BS-ch13
+- name: BS 日テレ
+  type: BS
+  channel: '014'
+  satelite: '0' 
+
+- name: BS フジ
+  type: BS
+  channel: '015'
+  satelite: '0' 
+
+- name: BS アニマックス
+  type: BS
+  channel: '016'
+  satelite: '0' 
+  isdisable: false #TBS
+
+#BS-ch15
+- name: NHK BS1
+  type: BS
+  channel: '017'
+  satelite: '0' 
+
+- name: NHK BS2
+  type: BS
+  channel: '018'
+  satelite: '0' 
+
+#BS-ch17 難視聴対策波/4k・8k試験波
+#- name: CH17-0
+#  type: BS
+#  channel: '00'
+#  isdisable: true
+
+#- name: CH17-1
+#  type: BS
+#  channel: ''
+#  isdesable: true
+
+#- name: CH17-2
+#  type: BS
+#  channel: ''
+#  isdesable: true
+
+#BS-ch19
+- name: グリーンチャンネル
+  type: BS
+  channel: '019'
+  satelite: '0' 
+  isdisable: false #TBS
+
+- name: J SPORTS 1
+  type: BS
+  channel: '020'
+  satelite: '0' 
+  isdisable: false #TBS
+
+- name: J SPORTS 2
+  type: BS
+  channel: '021'
+  satelite: '0' 
+  isdisable: false #TBS
+
+#BS-ch21
+- name: シネフィル・イマジカ
+  type: BS
+  channel: '022'
+  satelite: '0' 
+  isdisable: false #TBS
+
+- name: J SPORTS 3
+  type: BS
+  channel: '023'
+  satelite: '0' 
+  isdisable: false #TBS
+
+- name: J SPORTS 3
+  type: BS
+  channel: '024'
+  satelite: '0' 
+  isdisable: false #TBS
+
+#BS-ch23
+- name: BS釣りビジョン
+  type: BS
+  channel: '025'
+  satelite: '0' 
+  isdisable: false #TBS
+
+- name: 日本映画専門チャンネル
+  type: BS
+  channel: '026'
+  satelite: '0' 
+  isdisable: false #TBS
+
+#====================================
+#CS
+#- name: SPTV Promo
+#  type: CS
+#  channel: '001'
+#  serviceId: 100
+
+- name: ND02
+  type: CS
+  channel: '000'
+  satelite: '1' 
+  isdisable: false #TCS
+
+- name: ND04
+  type: CS
+  channel: '001'
+  satelite: '1' 
+  isdisable: false #TCS
+
+- name: ND06
+  type: CS
+  channel: '002' 
+  satelite: '1' 
+  isdisable: false #TCS
+
+- name: ND08
+  type: CS
+  channel: '003'
+  satelite: '1' 
+  isdisable: false #TCS
+
+- name: ND10
+  type: CS
+  channel: '004'
+  satelite: '1' 
+  isdisable: false #TCS
+
+- name: ND12
+  type: CS
+  channel: '005'
+  satelite: '1' 
+  isdisable: false #TCS
+
+- name: ND14
+  type: CS
+  channel: '006'
+  satelite: '1' 
+  isdisable: false #TCS
+
+- name: ND16
+  type: CS
+  channel: '007'
+  satelite: '1' 
+  isdisable: false #TCS
+
+- name: ND18
+  type: CS
+  channel: '008'
+  satelite: '1' 
+  isdisable: false #TCS
+
+- name: ND20
+  type: CS
+  channel: '009'
+  satelite: '1' 
+  isdisable: false #TCS
+
+- name: ND22
+  type: CS
+  channel: '010'
+  satelite: '1' 
+  isdisable: false #TCS
+
+- name: ND24
+  type: CS
+  channel: '011'
+  satelite: '1' 
+  isdisable: false #TCS
