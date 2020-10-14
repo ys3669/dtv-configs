@@ -25,9 +25,9 @@
     "isEnabledDropCheck": true,
     "ffmpeg": "/usr/local/bin/ffmpeg",
     "ffprobe": "/usr/local/bin/ffprobe",
-    "reservationAddedCommand": "%node% /app/data/EPGS-to-Discord/index.js reserve",
-    "recordedStartCommand": "%node% /app/data/EPGS-to-Discord/index.js start",
-    "recordedEndCommand": "%node% /app/data/EPGS-to-Discord/index.js end",
+    "reservationAddedCommand": "/usr/local/bin/node /app/data/EPGS-to-Discord/index.js reserve",
+    "recordedStartCommand": "/usr/local/bin/node /app/data/EPGS-to-Discord/index.js start",
+    "recordedEndCommand": "/usr/local/bin/node /app/data/EPGS-to-Discord/index.js end",
     "maxEncode": 2,
     "maxStreaming": 4,
     "encode": [
@@ -109,7 +109,7 @@
             },
             {
                 "name": "720p_vaapi",
-                "cmd": "%FFMPEG% -dual_mono_mode main %RE% -hwaccel vaapi -hwaccel_device /dev/dri/renderD128 -hwaccel_output_format vaapi -i pipe:0 -sn -threads 2 -c:a libvorbis -ar 48000 -ac 2 -c:v libvpx-vp9 -vf yadif,scale=-2:360 %VB% %VBUFFER% %AB% %ABUFFER% -deadline realtime -speed 4 -cpu-used -8 -y -f webm pipe:1",
+                "cmd": "%FFMPEG% -dual_mono_mode main %RE% -hwaccel vaapi -hwaccel_device /dev/dri/renderD128 -hwaccel_output_format vaapi -i pipe:0 -sn -threads 2 -c:a libvorbis -ar 48000 -ac 2 -c:v vp9_vaapi -vf deinterlace_vaapi,scale_vaapi=w=1280:h=-2 %VB% %VBUFFER% %AB% %ABUFFER% -deadline realtime -speed 4 -cpu-used -8 -y -f webm pipe:1",
                 "vb": "3000k",
                 "ab": "192k"
             }
