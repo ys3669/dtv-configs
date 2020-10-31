@@ -31,6 +31,11 @@
 - name: Ｊ：ＣＯＭチャンネル
   type: GR
   channel: '37'
+#
+#BS
+#
+
+#1ch
 - name: ＢＳ朝日１
   type: BS
   channel: BS01_0
@@ -39,27 +44,124 @@
   type: BS
   channel: BS01_0
   serviceId: 152
+  isDisabled: true
+- name: ＢＳ朝日３
+  type: BS
+  channel: BS01_0
+  serviceId: 153
+  isDisabled: true
+
 - name: ＢＳ－ＴＢＳ
   type: BS
   channel: BS01_1
   serviceId: 161
+- name: ＢＳ－ＴＢＳ_162
+  type: BS
+  channel: BS01_1
+  serviceId: 161
+  isDisabled: true
+- name: ＢＳ－ＴＢＳ_163
+  type: BS
+  channel: BS01_1
+  serviceId: 161
+  isDisabled: true
+
 - name: ＢＳテレ東
   type: BS
   channel: BS01_2
   serviceId: 171
+- name: ＢＳテレ東_172
+  type: BS
+  channel: BS01_2
+  serviceId: 172
+  isDisabled: true
+- name: ＢＳテレ東_173
+  type: BS
+  channel: BS01_2
+  serviceId: 173
+  isDisabled: true
+
+#3ch
 - name: ＷＯＷＯＷプライム
   type: BS
   channel: BS03_0
   serviceId: 191
   isDisabled: false
+
 - name: ＮＨＫＢＳプレミアム
   type: BS
   channel: BS03_1
   serviceId: 103
-- name: ＮＨＫＢＳプレミアム
+- name: ＮＨＫＢＳプレミアム(Sub)
   type: BS
   channel: BS03_1
   serviceId: 104
+
+- name: ディズニーｃｈ
+  type: BS
+  channel: BS03_2
+  serviceId: 256
+  isDisabled: true
+
+#13ch
+- name: ＢＳ日テレ
+  type: BS
+  channel: BS13_0
+  serviceId: 141
+- name: ＢＳ日テレ_142
+  type: BS
+  channel: BS13_0
+  serviceId: 142
+  isDisabled: true
+- name: ＢＳ日テレ_143
+  type: BS
+  channel: BS13_0
+  serviceId: 143
+  isDisabled: true
+
+- name: ＢＳフジ・１８１
+  type: BS
+  channel: BS13_1
+  serviceId: 181
+- name: ＢＳフジ・１８２
+  type: BS
+  channel: BS13_1
+  serviceId: 182
+  isDisabled: true
+- name: ＢＳフジ・１８３
+  type: BS
+  channel: BS13_1
+  serviceId: 183
+  isDisabled: true
+
+- name: ＢＳアニマックス
+  type: BS
+  channel: BS13_2
+  serviceId: 236
+  isDisabled: true
+
+#15ch
+- name: ＮＨＫＢＳ１
+  type: BS
+  channel: BS15_0
+  serviceId: 101
+- name: ＮＨＫＢＳ１(Sub)
+  type: BS
+  channel: BS15_0
+  serviceId: 102
+
+- name: スター・チャンネル２
+  type: BS
+  channel: BS15_1
+  serviceId: 201
+  isDisabled: false
+- name: スター・チャンネル３
+  type: BS
+  channel: BS15_1
+  serviceId: 202
+  isDisabled: false
+
+#5ch
 - name: ＷＯＷＯＷライブ
   type: BS
   channel: BS05_0
@@ -70,34 +172,138 @@
   channel: BS05_1
   serviceId: 193
   isDisabled: false
+
+#7ch
+# - name: 【4k】BS朝日
+#   type: BS
+#   channel: BS07_0
+#   serviceId: 000
+#   isDisabled: true
+# - name: 【4k】BS朝日
+#   type: BS
+#   channel: BS07_1
+#   serviceId: 000
+#   isDisabled: true
+# - name: 【4k】BS朝日
+#   type: BS
+#   channel: BS07_2
+#   serviceId: 000
+#   isDisabled: true
+
+#9ch
 - name: ＢＳ１１イレブン
   type: BS
   channel: BS09_0
   serviceId: 211
+
+- name: スター・チャンネル１
+  type: BS
+  channel: BS09_1
+  serviceId: 200
+  isDisabled: false
+
+- name: ＢＳ１２トゥエルビ
+  type: BS
+  channel: BS09_2
+  serviceId: 222
+
+#11ch
+# - name: ＦＯＸスポーツ＆エンターテイメント
+#   type: BS
+#   channel: BS11_0
+#   serviceId: 238
+#   isDisabled: true
+
 - name: ＢＳスカパー！
   type: BS
-  channel: BS11_1
+  channel: BS11_0
   serviceId: 241
-- name: ＢＳ日テレ
+
+- name: 放送大学BSキャンパスex
   type: BS
-  channel: BS13_0
-  serviceId: 141
-- name: ＢＳ日テレ
+  channel: BS11_1
+  serviceId: 231
+- name: 放送大学BSキャンパスon
   type: BS
-  channel: BS13_0
-  serviceId: 142
-- name: ＢＳフジ・１８１
+  channel: BS11_1
+  serviceId: 232
+
+#17ch
+# - name: 【4k】NHKSHV4K
+#   type: BS
+#   channel: BS17_0
+#   serviceId: 000
+#   isDisabled: true
+# - name: 【4k】BS-TBS
+#   type: BS
+#   channel: BS17_1
+#   serviceId: 000
+#   isDisabled: true
+# - name: 【4k】BSフジ
+#   type: BS
+#   channel: BS17_2
+#   serviceId: 000
+#   isDisabled: true
+
+#19ch
+- name: グリーンチャンネル
   type: BS
-  channel: BS13_1
-  serviceId: 181
-- name: NHK BS1
+  channel: BS19_0
+  serviceId: 234
+  isDisabled: false
+
+- name: Ｊ　ＳＰＯＲＴＳ　１
   type: BS
-  channel: BS15_0
-  serviceId: 101
-- name: NHK BS1 (Sub)
+  channel: BS19_1
+  serviceId: 242
+  isDisabled: false
+
+- name: Ｊ　ＳＰＯＲＴＳ　２
   type: BS
-  channel: BS15_0
-  serviceId: 102
+  channel: BS19_2
+  serviceId: 243
+  isDisabled: false
+
+#21ch
+- name: シネフィルＷＯＷＯＷ
+  type: BS
+  channel: BS21_0
+  serviceId: 252
+  isDisabled: false
+
+- name: Ｊ　ＳＰＯＲＴＳ　３
+  type: BS
+  channel: BS21_1
+  serviceId: 244
+  isDisabled: false
+- name: Ｊ　ＳＰＯＲＴＳ　４
+  type: BS
+  channel: BS21_2
+  serviceId: 245
+  isDisabled: false
+
+#23ch
+- name: ＢＳ釣りビジョン
+  type: BS
+  channel: BS23_0
+  serviceId: 251
+  isDisabled: false
+
+- name: 日本映画専門チャンネル
+  type: BS
+  channel: BS23_1
+  serviceId: 255
+  isDisabled: false
+
+# - name: Dlife
+#   type: BS
+#   channel: BS23_2
+#   serviceId: 258
+#   isDisabled: true
+
+#
+#CS
+#
 - name: テレ朝チャンネル1
   type: CS
   channel: CS2
@@ -108,15 +314,21 @@
   channel: CS2
   serviceId: 299
   isDisabled: true
+- name: 日テレプラス
+  type: CS
+  channel: CS24
+  serviceId: 300
+  isDisabled: true
 - name: AT-X
   type: CS
   channel: CS16
   serviceId: 333
   isDisabled: true
-- name: 日テレプラス
-  type: CS
-  channel: CS24
-  serviceId: 300
+- name: BS SPTV
+  type: SKY
+  channel: CH585
+  serviceId: 33353
+  satelite: JCSAT3A
   isDisabled: true
 - name: AT-X HD
   type: SKY
@@ -129,10 +341,4 @@
   channel: AXNHD
   serviceId: 33418
   satelite: JCSAT4A
-  isDisabled: true
-- name: BS SPTV
-  type: SKY
-  channel: CH585
-  serviceId: 33353
-  satelite: JCSAT3A
   isDisabled: true
